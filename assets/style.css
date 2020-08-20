@@ -13,7 +13,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-a:after {
+#container {
+  width: 1300px;
+  padding: 2rem;
+  background-color: white;
+  margin: 5% 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header a:after,
+.container-body a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -26,29 +44,13 @@ a:after {
   width: 0;
 }
 
-a:hover:after {
+.container-header a:hover:after,
+.container-body a:hover:after {
   width: 100%;
   left: 0;
 }
 
-#container {
-  width: 1300px;
-  padding: 2rem;
-  background-color: white;
-  margin: 5% 0;
-  border-radius: 15px;
-  -webkit-box-shadow: 10px 10px 46px 14px rgba(0,0,0,0.25);
-  -moz-box-shadow: 10px 10px 46px 14px rgba(0,0,0,0.25);
-  box-shadow: 10px 10px 46px 14px rgba(0,0,0,0.25);
-}
-
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container-header > h1 {
+.container-header>h1 {
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -99,21 +101,22 @@ a:hover:after {
   width: 500px;
 }
 
-.body-title > ul > li:first-child {
+.body-title>ul>li:first-child {
   margin: 1rem 0;
 }
 
-.body-project > h3 {
+.body-project>h3 {
   font-size: 15px;
   font-weight: bold;
   color: gray;
   margin-left: 1rem;
 }
-.body-project > img {
+
+.body-project>img {
   width: 100%;
 }
 
-.body-project > button {
+.body-project>button {
   float: right;
   padding: 0.8rem 2rem;
   border: 1px solid transparent;
@@ -155,6 +158,6 @@ footer {
   font-size: 24px;
 }
 
-.footer-icons > a:first-child {
+.footer-icons>a:first-child {
   margin-right: 1rem;
 }
