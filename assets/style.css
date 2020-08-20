@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .container-header a:after,
@@ -158,6 +159,6 @@ footer {
   font-size: 24px;
 }
 
-.footer-icons>a:first-child {
+.footer-icons>a {
   margin-right: 1rem;
 }
