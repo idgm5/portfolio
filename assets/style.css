@@ -163,3 +163,54 @@ footer {
 .footer-icons>a {
   margin-right: 1rem;
 }
+
+#project-picture {
+  width: 50%;
+}
+
+.example-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-project > h2 {
+  font-size: 50px;
+}
+
+.example-project > h3 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+.example-project > p {
+  margin: 1.5rem 0;
+  text-align: justify;
+  width: 480px;
+}
+
+.tags {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.tags > span {
+  border: 1px solid transparent;
+  background-color: red;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  width: 8rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example-project > button {
+  margin: 1rem;
+}
+
+#starTrooper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
