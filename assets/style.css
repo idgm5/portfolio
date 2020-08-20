@@ -119,9 +119,10 @@ body {
 
 .body-project>button {
   float: right;
+  font-weight: bold;
   padding: 0.8rem 2rem;
   border: 1px solid transparent;
-  background-color: blue;
+  background-color: #606ffc;
   color: white;
   margin-right: 1rem;
   cursor: pointer;
