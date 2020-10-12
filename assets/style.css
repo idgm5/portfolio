@@ -363,6 +363,14 @@ li::marker {
   .about-text {
     margin: 1.5rem 0;
   }
+
+  #starTrooper {
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 60% !important;
+  }
 }
 
 /* Tablet portrait & landscape screens */
