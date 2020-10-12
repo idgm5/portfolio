@@ -359,4 +359,8 @@ li::marker {
   .tags {
     display: none;
   }
+
+  .about-text {
+    margin: 1.5rem 0;
+  }
 }
