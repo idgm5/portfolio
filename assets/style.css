@@ -174,16 +174,16 @@ footer {
   align-items: center;
 }
 
-.example-project > h2 {
+.example-project>h2 {
   font-size: 50px;
 }
 
-.example-project > h3 {
+.example-project>h3 {
   font-size: 20px;
   margin: 0.5rem 0;
 }
 
-.example-project > p {
+.example-project>p {
   margin: 1.5rem 0;
   text-align: justify;
   width: 480px;
@@ -194,7 +194,7 @@ footer {
   margin: 1rem 0;
 }
 
-.tags > span {
+.tags>span {
   border: 1px solid transparent;
   background-color: red;
   padding: 0.5rem;
@@ -205,7 +205,7 @@ footer {
   text-align: center;
 }
 
-.example-project > button {
+.example-project>button {
   margin: 1rem;
 }
 
@@ -237,4 +237,93 @@ footer {
 
 .about-title {
   width: auto;
+}
+
+.burger-menu {
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 30px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.dropdown .dropdown-content.show {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+.burger-menu {
+  width: 30px;
+}
+
+li::marker {
+  display: none;
+}
+/* Mobile portrait & landscape screens */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .container-header {
+    width: 100%;
+  }
+
+  nav>ul,
+  #header-contact {
+    display: none !important;
+  }
+
+  .container-body {
+    flex-direction: column;
+  }
+
+  .body-title,
+  .body-project {
+    width: 100%;
+  }
+
+  .body-title {
+    margin-bottom: 2rem;
+  }
+
+  .body-title p {
+    font-size: 30px;
+    width: 100%;
+  }
 }
