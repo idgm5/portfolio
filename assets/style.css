@@ -292,6 +292,11 @@ footer {
 li::marker {
   display: none;
 }
+
+.menu-icon {
+  display: none;
+}
+
 /* Mobile portrait & landscape screens */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #container {
@@ -302,6 +307,10 @@ li::marker {
 
   .container-header {
     width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
   }
 
   nav>ul,
@@ -325,5 +334,29 @@ li::marker {
   .body-title p {
     font-size: 30px;
     width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-icons {
+    margin-bottom: 0.5rem;
+  }
+
+  #project-picture {
+    width: 100%;
+  }
+
+  .example-project>h2 {
+    font-size: 35px;
+  }
+
+  .example-project>p {
+    width: 100%;
+  }
+
+  .tags {
+    display: none;
   }
 }
