@@ -289,8 +289,8 @@ footer {
   width: 30px;
 }
 
-li::marker {
-  display: none;
+ul {
+  list-style-type: none;
 }
 
 .menu-icon {
