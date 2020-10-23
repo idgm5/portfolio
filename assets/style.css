@@ -175,7 +175,7 @@ footer {
 }
 
 .example-project>h2 {
-  font-size: 50px;
+  font-size: 42px;
 }
 
 .example-project>h3 {
@@ -297,6 +297,11 @@ ul {
   display: none;
 }
 
+.section-title {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 42px;
+}
 /* Mobile portrait & landscape screens */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   #container {
@@ -307,14 +312,16 @@ ul {
 
   .container-header {
     width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 0;
   }
 
   .menu-icon {
     display: block;
   }
 
-  nav>ul,
-  #header-contact {
+  nav>ul {
     display: none !important;
   }
 
@@ -419,4 +426,8 @@ ul {
   .body-project>h3 {
     font-size: 25px;
   }
+}
+
+.header-icons {
+  margin: 0 !important;
 }

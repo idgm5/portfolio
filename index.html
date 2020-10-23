@@ -1,72 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@idgm5 - Isaac Gonzalez</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://kit.fontawesome.com/8e996abce9.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="container">
-      <div class="container-header">
-        <h1>idgm.dev</h1>
-        <nav class="header-menu">
-          <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./about.html">About me</a></li>
-          </ul>
-        </nav>
-        <div class="menu-icon">
-          <i class="fas fa-bars burger-menu"></i>
-        </div>
-        <div id="header-contact">
-          <a href="mailto: idgm@pm.me">Contact me <i class="far fa-comments"></i></a>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@idgm5 - Isaac Gonzalez</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/8e996abce9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="container-header">
+      <h1>idgm.dev</h1>
+      <div id="header-contact">
+        <a href="mailto: idgm@pm.me">Contact me <i class="far fa-comments"></i></a>
       </div>
-      <div class="dropdown">
-        <div class="dropdown-content">
-          <li><a href="./index.html" class="active">Home</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./about.html">About me</a></li>
-        </div>
+    </div>
+    <div class="container-body">
+      <div class="body-title">
+        <ul>
+          <li><span class="short-blackline"></span></li>
+          <li>
+            <p>I code web applications with React/Redux and Ruby on Rails</p>
+          </li>
+          <li>
+            <div id="contact-line">
+              <span class="long-blackline"></span>
+              <div class="footer-icons header-icons">
+                <a href="https://www.linkedin.com/in/isaacmunguia/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/idgm5"><i class="fab fa-github"></i></a>
+                <a href="https://angel.co/u/idgm"><i class="fa fa-angellist"></i></a>
+                <a href="https://www.twitter.com/idgm5"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="container-body">
-        <div class="body-title">
-          <ul>
-            <li><span class="short-blackline"></span></li>
-            <li><p>I code web applications with ReactJS and Ruby on Rails</p></li>
-            <li>
-              <div id="contact-line">
+      <div class="body-project">
+        <img src="./assets/ide.svg" alt="lastProject" />
+        <button type="button" name="button" onclick="window.location.href='https://www.github.com/idgm5';">Github <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <h1 class="section-title"> Projects </h1>
+    <div class="container-body">
+      <img src="./assets/projects/screely_vespa.png" alt="lastProject" id="project-picture" />
+      <div class="body-project example-project">
+        <h2>Vespa Bikes</h2>
+        <h3>September 2020</h3>
+        <p>A catalogue for Vespa Bikes. Users can create a username to register appointments and select a bike model from the list to test drive.
+          Built with React/Redux for the front-end and Ruby on Rails for the backend.</p>
+        <div class="tags">
+          <span># React/Redux</span>
+          <span># Ruby on Rails</span>
+          <span># HTML & CSS</span>
+        </div>
+        <button type="button" name="button" onclick="window.location.href='https://github.com/idgm5/appointment';">Show Project <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="container-body">
+      <img src="./assets/projects/hungry_house.png" alt="lastProject" id="project-picture" />
+      <div class="body-project example-project">
+        <h2>Hungry House</h2>
+        <h3>August 2020</h3>
+        <p>Hungry House allows you to access a large collection of gourmet recipes around the world.
+          You can choose from a food category or use the search box
+          to look for a recipe that uses a specific ingredient.</p>
+        <div class="tags">
+          <span># ReactJS</span>
+          <span># Redux</span>
+          <span># HTML & CSS</span>
+        </div>
+        <button type="button" name="button" onclick="window.location.href='https://github.com/idgm5/catalogue';">Show Project <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="container-body">
+      <div id="starTrooper">
+        <img src="./assets/projects/star_trooper.png" alt="lastProject" id="project-picture" class="trooper-30" />
+      </div>
+      <div class="body-project example-project">
+        <h2>Star Trooper</h2>
+        <h3>July 2020</h3>
+        <p>A space shooter game made with Phaser 3,
+          only takes a few seconds to start playing in your web browser,
+          and share your score with your friends in an online leaderboard.</p>
+        <div class="tags">
+          <span># PhaserJS</span>
+          <span># Javascript</span>
+          <span># HTML & CSS</span>
+        </div>
+        <button type="button" name="button" onclick="window.location.href='https://github.com/idgm5/shootergame';">Show Project <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="container-body">
+      <img src="./assets/projects/remotelist.png" alt="lastProject" id="project-picture" />
+      <div class="body-project example-project">
+        <h2>RemoteList</h2>
+        <h3>August 2018</h3>
+        <p>The largest list on the internet for job boards advertising Remote Jobs.
+          Seek advice about working remotely and find the best places to apply.</p>
+        <div class="tags">
+          <span># MeteorJS</span>
+          <span># Javascript</span>
+          <span># HTML & CSS</span>
+        </div>
+        <button type="button" name="button" onclick="window.location.href='https://www.remotelist.pw/';">Show Project <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <h1 class="section-title"> About me </h1>
+    <div class="container-body about-body">
+      <div class="body-project about-project">
+        <img src="./assets/projects/profile.jpeg" alt="lastProject" class="profile-image" />
+      </div>
+      <div class="body-title about-title">
+        <ul>
+          <li><span class="short-blackline"></span></li>
+          <li>
+            <p class="about-text">Hello, my name is Isaac Gonzalez and I'm a student in the Microverse program, an online school for software developers.
+              I also mentor a few students that started the program a few months after me and I graduated from the technical curriculum in October of this year.</p>
+
+            <p class="about-text">I completed an MBA program in Finance in 2019, and before that, I worked as an industrial engineer for a global supplier of wires, cables,
+              and wiring systems for big auto car companies such as Volvo and General Motors.</p>
+
+            <p class="about-text">I also launched RemoteList.pw, which remains the largest list on the internet for job boards advertising remote jobs.
+              It was awarded the Product of the Day on Product Hunt when it premiered in 2018.</p>
+
+            <p class="about-text">I’m currently looking for new opportunities where I can grow as a software developer and grow in the field!</p>
+          </li>
+          <li>
+            <div id="contact-line">
               <span class="long-blackline"></span>
               <a href="mailto: idgm@pm.me">Contact me</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="body-project">
-          <h3>Latest Project</h3>
-          <img src="./assets/projects/hungry_house.png" alt="lastProject" />
-          <button type="button" name="button" onclick="window.location.href='https://github.com/idgm5/catalogue';">Show <i class="fas fa-arrow-right"></i></button>
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <footer>
-        <div class="footer-icons">
-          <a href="https://www.linkedin.com/in/isaacmunguia/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.github.com/idgm5"><i class="fab fa-github"></i></a>
-          <a href="https://www.twitter.com/idgm5"><i class="fab fa-twitter"></i></a>
-        </div>
-        <p>© 2020 - Isaac González </p>
-      </footer>
     </div>
-  </body>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $('.burger-menu').click(function(){
+    <footer>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/isaacmunguia/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.github.com/idgm5"><i class="fab fa-github"></i></a>
+        <a href="https://angel.co/u/idgm"><i class="fa fa-angellist"></i></a>
+        <a href="https://www.twitter.com/idgm5"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2020 - Isaac González </p>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.burger-menu').click(function() {
       $('.dropdown-content').toggleClass('show');
     });
   });
-  </script>
+</script>
+
 </html>
