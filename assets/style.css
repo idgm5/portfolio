@@ -227,7 +227,7 @@ footer {
 }
 
 .profile-image {
-  width: 250px !important;
+  width: 50% !important;
   border-radius: 50%;
 }
 
@@ -373,10 +373,6 @@ ul {
 
   #starTrooper {
     width: 100%;
-  }
-
-  .profile-image {
-    width: 60% !important;
   }
 }
 
