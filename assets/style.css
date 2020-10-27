@@ -109,7 +109,7 @@ body {
 .body-project>h3 {
   font-size: 15px;
   font-weight: lighter;
-  color: gray;
+  color: #606ffc;
   margin-left: 1rem;
 }
 
@@ -117,15 +117,22 @@ body {
   width: 100%;
 }
 
+.project-buttons-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.body-project>div>button,
 .body-project>button {
   float: right;
   font-weight: bold;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   border: 1px solid transparent;
   background-color: #606ffc;
   color: white;
-  margin-right: 1rem;
   cursor: pointer;
+  width: 45%;
 }
 
 .short-blackline {
@@ -372,6 +379,9 @@ ul {
   }
 
   #starTrooper {
+    width: 100%;
+  }
+  .project-buttons-flex {
     width: 100%;
   }
 }
