@@ -123,18 +123,7 @@ body {
   width: 80%;
 }
 
-.project-buttons-flex>button {
-  float: right;
-  font-weight: bold;
-  padding: 0.8rem 1rem;
-  border: 1px solid transparent;
-  background-color: #606ffc;
-  color: white;
-  cursor: pointer;
-  width: 45%;
-}
-
-.body-project>button {
+.body-project button {
   float: right;
   font-weight: bold;
   padding: 0.8rem 1rem;
