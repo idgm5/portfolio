@@ -309,7 +309,7 @@ ul {
   font-size: 42px;
 }
 /* Mobile portrait & landscape screens */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   #container {
     width: 100%;
     margin: 0;
@@ -386,7 +386,7 @@ ul {
 }
 
 /* Tablet portrait & landscape screens */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .body-title p {
     font-size: 45px;
   }
