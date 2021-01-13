@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  width: 1300px;
+  padding: 2rem;
+  background-color: white;
+  margin: 5% 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.container-header a:after,
+.container-body a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.container-header a:hover:after,
+.container-body a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.container-header>h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.container-header ul,
+.container-body ul {
+  list-style: none;
+}
+
+.container-header a,
+.container-body a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.container-header i,
+.container-body i {
+  margin-left: 0.5rem;
+}
+
+.header-menu>ul {
+  display: flex;
+}
+
+.header-menu>ul>li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.container-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5% 2%;
+}
+
+.body-title,
+.body-project {
+  width: 50%;
+}
+
+.body-title p {
+  font-size: 45px;
+  font-weight: bold;
+  width: 500px;
+}
+
+.body-title>ul>li:first-child {
+  margin: 1rem 0;
+}
+
+.body-project>h3 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #606ffc;
+  margin-left: 1rem;
+}
+
+.body-project>img {
+  width: 100%;
+}
+
+.project-buttons-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.body-project button {
+  float: right;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+  background-color: #606ffc;
+  color: white;
+  cursor: pointer;
+  width: 45%;
+}
+
+.short-blackline {
+  display: block;
+  border: 4px solid black;
+  width: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#contact-line {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.long-blackline {
+  display: block;
+  border: 1px solid black;
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-icons i {
+  color: black;
+  font-size: 24px;
+}
+
+.footer-icons>a {
+  margin-right: 1rem;
+}
+
+#project-picture {
+  width: 50%;
+}
+
+.example-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-project>h2 {
+  font-size: 42px;
+}
+
+.example-project>h3 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+.example-project>p {
+  margin: 1.5rem 0;
+  text-align: justify;
+  width: 480px;
+}
+
+.tags {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.tags>span {
+  border: 1px solid transparent;
+  background-color: red;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  width: 8rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example-project>button {
+  margin: 1rem;
+}
+
+#starTrooper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.about-project {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  font-size: 15px !important;
+  text-align: justify;
+  margin: 1.5rem;
+}
+
+.profile-image {
+  width: 50% !important;
+  border-radius: 50%;
+}
+
+.about-body {
+  flex-direction: column;
+}
+
+.about-title {
+  width: auto;
+}
+
+.burger-menu {
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 30px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.dropdown .dropdown-content.show {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+.burger-menu {
+  width: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 42px;
+}
+/* Mobile portrait & landscape screens */
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  #container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .container-header {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav>ul {
+    display: none !important;
+  }
+
+  .container-body {
+    flex-direction: column;
+  }
+
+  .body-title,
+  .body-project {
+    width: 100%;
+  }
+
+  .body-title {
+    margin-bottom: 2rem;
+  }
+
+  .body-title p {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-icons {
+    margin-bottom: 0.5rem;
+  }
+
+  #project-picture {
+    width: 100%;
+  }
+
+  .example-project>h2 {
+    font-size: 35px;
+  }
+
+  .example-project>p {
+    width: 100%;
+  }
+
+  .tags {
+    display: none;
+  }
+
+  .about-text {
+    margin: 1.5rem 0;
+  }
+
+  #starTrooper {
+    width: 100%;
+  }
+  .project-buttons-flex {
+    width: 100%;
+  }
+}
+
+/* Tablet portrait & landscape screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .body-title p {
+    font-size: 45px;
+  }
+
+  .burger-menu {
+    font-size: 35px;
+  }
+
+  .example-project>h2 {
+    font-size: 54px;
+  }
+
+  .example-project>h3 {
+    font-size: 26px;
+  }
+
+  .example-project>p {
+    font-size: 28px;
+  }
+
+  .body-project>button {
+    font-size: 24px;
+    padding: 1.5rem 5rem;
+  }
+
+  .footer-icons i {
+    font-size: 36px;
+  }
+
+  footer>p {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 24px !important;
+  }
+
+  .container-header a, .container-body a {
+    font-size: 24px;
+  }
+
+  .body-project>h3 {
+    font-size: 25px;
+  }
+}
+
+.header-icons {
+  margin: 0 !important;
+}
